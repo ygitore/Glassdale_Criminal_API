@@ -1,0 +1,11 @@
+.filters__crime{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.officer__name{
+    flex-basis: 50%;
+    height: 400px;
+    width: 300px;
+}
