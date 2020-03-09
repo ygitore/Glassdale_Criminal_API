@@ -1,12 +1,12 @@
-import { convictionList } from "./convictions/convictionList.js";
-// main.js
+import { convictionList } from "./officers/officerList.js";
 import { getOfficers } from "./officers/OfficerProvider.js";
+import {getCriminals } from "./criminals/CriminalProvider.js";
+import { crimianlList } from "./criminals/crimalList.js";
+
 
 getOfficers().then(
-    /*
-        Now that you have the data, what
-        component should be rendered?
-    */
-    convictionList
-
+   convictionList
+)
+getCriminals().then(
+    crimianlList
 )

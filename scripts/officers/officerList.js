@@ -1,7 +1,7 @@
-import { Conviction } from "./conviction.js";
-import { useOfficers } from "../officers/OfficerProvider.js";
+import { Conviction } from "./officer.js";
+import { useOfficers } from "./OfficerProvider.js";
 
-const contentTarget = document.querySelector('.filters__crime')
+const contentTarget = document.querySelector('.filters__officer')
 export const convictionList = () => {
     const officers = useOfficers()
     for (const convictionObject of officers) {
