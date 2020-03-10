@@ -16,5 +16,5 @@ getCriminals().then(
 )
 
 getConvictions().then(
-    ConvictionSelect()
+    ConvictionSelect
 )
