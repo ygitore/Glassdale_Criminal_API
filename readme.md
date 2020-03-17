@@ -1,2 +1,0 @@
-![Main View](https://raw.githubusercontent.com/yitbarekgitore/Glassdale_Criminal_API/master/screenshots/mainview.PNG)
-![Main View](https://raw.githubusercontent.com/yitbarekgitore/Glassdale_Criminal_API/master/screenshots/bottomview.PNG)

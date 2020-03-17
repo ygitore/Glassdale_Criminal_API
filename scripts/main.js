@@ -1,20 +1,17 @@
-import { convictionList } from "./officers/officerList.js";
-import { getOfficers } from "./officers/OfficerProvider.js";
+import { getCriminals } from "./criminals/CriminalProvider.js"
+import { CriminalList } from "./criminals/CriminalList.js"
+import { getConvictions } from "./convictions/ConvictionProvider.js"
+import ConvictionSelect from "./convictions/ConvictionSelect.js"
+import NoteForm from "./notes/NoteForm.js"
+import { DisplayNotesButton } from "./notes/DisplayNotesButton.js"
+import "./notes/NotesList.js"
+import { DisplayNoteFormButton } from "./notes/DisplayNoteFormButton.js"
 
-import {getCriminals } from "./criminals/CriminalProvider.js";
-import { crimianlList } from "./criminals/crimalList.js";
+getCriminals().then(CriminalList)
 
-import { getConvictions } from "./conviction/ConvictionProvider.js";
-import ConvictionSelect from "./conviction/ConvictionSelect.js";
+// first get all convictions, THEN create the conviction dropdown
+getConvictions().then(ConvictionSelect)
 
-
-getOfficers().then(
-   convictionList
-)
-getCriminals().then(
-    crimianlList
-)
-
-getConvictions().then(
-    ConvictionSelect
-)
+DisplayNotesButton()
+DisplayNoteFormButton()
+NoteForm()
