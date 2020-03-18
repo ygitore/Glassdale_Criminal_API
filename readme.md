@@ -17,5 +17,4 @@ This is the application that fetches the data from external(glassdale pd crimina
 * Open another ubuntu inside windows terminal by clicking down arrow, then navigate to the root directory of this project and run the following command: json-server -p 8088 -w notes.json
 In your browser, navigate to https://localhost:5000;
 # Contributor(s)
-* Steve Brownlee
 * Yitbarek Gitore
