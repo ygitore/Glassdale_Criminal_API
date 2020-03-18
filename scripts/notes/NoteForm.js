@@ -5,6 +5,7 @@ const eventHub = document.querySelector(".container")
 
 let visibility = false
 
+// To toggle when show note Form button is clicked
 eventHub.addEventListener("noteFormButtonClicked", customEvent => {
     visibility = !visibility
 
