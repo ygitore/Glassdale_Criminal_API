@@ -1,6 +1,20 @@
 import { saveNote } from "./NotesProvider.js"
 
 const contentTarget = document.querySelector(".noteFormContainer")
+const eventHub = document.querySelector(".container")
+
+let visibility = false
+// To toggle when show note Form button is clicked
+eventHub.addEventListener("noteFormButtonClicked", customEvent => {
+    visibility = !visibility
+
+    if (visibility) {
+        contentTarget.classList.remove("invisible")
+    }
+    else {
+        contentTarget.classList.add("invisible")
+    }
+})
 
 // Handle browser-generated click event in component
 contentTarget.addEventListener("click", clickEvent => {
@@ -22,21 +36,20 @@ contentTarget.addEventListener("click", clickEvent => {
 })
 
 const render = () => {
+    contentTarget.classList.add("invisible")
     contentTarget.innerHTML = `
         <fieldset>
-            <label for="noteText">Note:</label>
-            <input type="text" id="noteText">
+            <label class="label label--notes" for="noteText">Note:</label>
+            <textarea id="noteText"></textarea>
         </fieldset>
         <fieldset>
-            <label for="criminal">Criminal:</label>
+            <label class="label label--notes" for="criminal">Criminal:</label>
             <input type="text" id="criminal">
         </fieldset>
         <button id="saveNote">Save Note</button>
     `
 }
 
-const NoteForm = () => {
+export const NoteForm = () => {
     render()
 }
-
-export default NoteForm
