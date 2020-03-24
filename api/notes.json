@@ -2,13 +2,13 @@
   "notes": [
     {
       "noteText": "be maberawi media yesewun sim siyaxefa neber",
-      "criminal": 2,
+      "criminalId": 2,
       "timestamp": 1585066754514,
       "id": 13
     },
     {
       "noteText": "chifin amelekaket yalew sewu new",
-      "criminal": 4,
+      "criminalId": 4,
       "timestamp": 1585066851511,
       "id": 14
     }

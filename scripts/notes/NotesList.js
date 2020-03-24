@@ -1,5 +1,6 @@
 import { getNotes, useNotes } from "./NotesProvider.js"
 import { Note } from "./Note.js"
+import { useCriminals } from "../criminals/CriminalProvider.js"
 
 const contentTarget = document.querySelector(".notesContainer")
 const eventHub = document.querySelector(".container")
@@ -21,6 +22,7 @@ eventHub.addEventListener("allNotesClicked", customEvent => {
 
     if (visibility) {
         contentTarget.classList.remove("invisible")
+        render()
     }
     else {
         contentTarget.classList.add("invisible")
@@ -37,10 +39,12 @@ const render = () => {
 
     getNotes().then(() => {
         const allTheNotes = useNotes()
+        const criminals = useCriminals()
 
         contentTarget.innerHTML = allTheNotes.map(
             currentNoteObject => {
-                return Note(currentNoteObject)
+                const criminal = criminals.find(currentCriminal => currentCriminal.id === currentNoteObject.criminalId)
+                return Note(currentNoteObject, criminal)
             }
         ).join("")
     })
