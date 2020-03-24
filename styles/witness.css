@@ -1,0 +1,15 @@
+.witness__container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.individual-witness{
+    margin: 10px;
+    background-color: rgb(191, 192, 154);
+}
+.witness-name{
+    text-align: center;
+    font-weight: bold;
+    padding: 2px;
+}

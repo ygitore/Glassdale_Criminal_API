@@ -1,70 +1,16 @@
 {
   "notes": [
     {
-      "id": 1,
-      "noteText": "This person seems suspicious",
-      "timestamp": 1584382255712,
-      "criminal": "Taurean Bins"
+      "noteText": "be maberawi media yesewun sim siyaxefa neber",
+      "criminal": 2,
+      "timestamp": 1585066754514,
+      "id": 13
     },
     {
-      "id": 3,
-      "noteText": "Madi is suspicious",
-      "criminal": "Madi Peper",
-      "timestamp": 1584384742515
-    },
-    {
-      "noteText": "stealer",
-      "criminal": "Mathew",
-      "timestamp": 1584468884322,
-      "id": 4
-    },
-    {
-      "noteText": "stealer",
-      "criminal": "Mathew",
-      "timestamp": 1584468886269,
-      "id": 5
-    },
-    {
-      "noteText": "leba ",
-      "criminal": "abebe",
-      "timestamp": 1584471518142,
-      "id": 6
-    },
-    {
-      "noteText": "axif",
-      "criminal": "beqele",
-      "timestamp": 1584472276317,
-      "id": 7
-    },
-    {
-      "noteText": "Dembel",
-      "criminal": "Difen",
-      "timestamp": 1584472610439,
-      "id": 8
-    },
-    {
-      "noteText": "",
-      "criminal": "",
-      "timestamp": 1584486252751,
-      "id": 9
-    },
-    {
-      "noteText": "leba",
-      "criminal": "lakew",
-      "timestamp": 1584486360072,
-      "id": 10
-    },
-    {
-      "noteText": "tiru liji ayidelem",
-      "criminal": "abebe lakew",
-      "timestamp": 1584567977230,
-      "id": 11
-    },
-    {
-      "noteText": "debebe shakilo",
-      "criminal": "dagi demisew",
-      "timestamp": 1584663007339,
-      "id": 12
+      "noteText": "chifin amelekaket yalew sewu new",
+      "criminal": 4,
+      "timestamp": 1585066851511,
+      "id": 14
     }
   ]
 }

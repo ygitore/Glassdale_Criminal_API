@@ -2,7 +2,7 @@
 @import "./filter.css";
 @import "./notes.css";
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
-
+@import './witness.css';
 /*Typography
 --------------------------------------------------------------*/
 body,
@@ -26,18 +26,9 @@ h1,h2,h3,h4,h5,h6 {
     flex-direction: column;
     font-size: 1.25rem;
 }
-
 .listsContainer {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
-.witness__container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-
-
 
