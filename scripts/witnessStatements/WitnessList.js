@@ -3,8 +3,8 @@ import { getWitnesses, useWitnesses } from './WitnessProvider.js'
 
 let visiblity = false
 
-const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".witness__container")
+const eventHub = document.querySelector(".container")
 
 eventHub.addEventListener("witnessButtonClicked", e => {
     visiblity = !visiblity
