@@ -9,10 +9,9 @@ import { NotesList } from "./notes/NotesList.js"
 import "./criminals/KnownAssociatesDialog.js"
 import {WitnessButton} from './witnessStatements/WitnessButton.js'
 import './witnessStatements/WitnessList.js'
-getCriminals().then(CriminalList).then(NoteForm)
+getCriminals().then(CriminalList).then(NoteForm).then(NotesList)
 getConvictions().then(ConvictionSelect)
 
 DisplayNotesButton()
 DisplayNoteFormButton()
-NotesList()
 WitnessButton()
