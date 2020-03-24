@@ -1,11 +1,19 @@
 import {Witness} from './Witness.js'
 import { getWitnesses, useWitnesses } from './WitnessProvider.js'
 
+let visiblity = false
+
 const eventHub = document.querySelector(".container")
 const contentTarget = document.querySelector(".witness__container")
 
 eventHub.addEventListener("witnessButtonClicked", e => {
-    render()    
+    visiblity = !visiblity
+    if(visiblity){
+        contentTarget.classList.remove("invisible")
+        render()
+    } else {
+        contentTarget.classList.add("invisible")
+    }
 })
 
 const render = () => {

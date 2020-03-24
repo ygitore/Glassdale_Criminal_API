@@ -40,6 +40,16 @@ eventHub.addEventListener("crimeChosen", event => {
     render(criminalsToDisplay)
 })
 
+let visiblity = true
+eventHub.addEventListener("witnessButtonClicked", e => {
+    visiblity = !visiblity
+    if(visiblity){
+        contentTarget.classList.remove("invisible")
+    } else {
+        contentTarget.classList.add("invisible")
+    }
+})
+
 const render = criminalsToRender => {
     contentTarget.innerHTML = criminalsToRender.map(
         (criminalObject) => {
