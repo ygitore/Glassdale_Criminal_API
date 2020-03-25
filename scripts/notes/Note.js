@@ -1,3 +1,4 @@
+
 export const Note = (noteObject, criminalObject) => {
     return `
         <section class="note">
@@ -6,6 +7,7 @@ export const Note = (noteObject, criminalObject) => {
             </header>
             <p>${noteObject.noteText}</p>
             <p>${new Date(noteObject.timestamp).toLocaleDateString()}</p>
+            <button id = "delete--${noteObject.id}">Delete</button>
         </section>
     `
 }
