@@ -1,4 +1,4 @@
-import { getNotes, useNotes } from "./NotesProvider.js"
+import { getNotes, useNotes, DeleteNote } from "./NotesProvider.js"
 import { Note } from "./Note.js"
 import { useCriminals } from "../criminals/CriminalProvider.js"
 
@@ -10,6 +10,12 @@ const eventHub = document.querySelector(".container")
 */
 let visibility = false
 
+contentTarget.addEventListener("click", e => {
+    if(e.target.id.startsWith("delete--")){
+        const [_, criminalId] = e.target.id.split("--")
+        DeleteNote(criminalId)
+    }
+})
 /*
     Event handlers
 */
